@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | SimuladorBatCura</title>
+    <title>Simulador de Cura de Tabaco Estufa</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body>
+  <body background="bg.png">
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -18,9 +18,9 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
+        <!-- div id="unity-webgl-logo"></div -->
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">SimuladorBatCura</div>
+        <div id="unity-build-title">Simulador de Cura de Tabaco Estufa</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WEB v0.16.0.loader.js";
+      var loaderUrl = buildUrl + "/WEB v0.16.1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WEB v0.16.0.data",
-        frameworkUrl: buildUrl + "/WEB v0.16.0.framework.js",
-        codeUrl: buildUrl + "/WEB v0.16.0.wasm",
+        dataUrl: buildUrl + "/WEB v0.16.1.data",
+        frameworkUrl: buildUrl + "/WEB v0.16.1.framework.js",
+        codeUrl: buildUrl + "/WEB v0.16.1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "SimuladorBatCura",
-        productVersion: "0.16.0",
+        productVersion: "0.16.1",
         showBanner: unityShowBanner,
       };
 
