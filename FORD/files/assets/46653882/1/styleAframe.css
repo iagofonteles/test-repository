@@ -1,0 +1,102 @@
+.a-modal{
+    display:none
+}
+.a-dialog-allow-button {
+    background-color: #002F6C;
+    color: white;
+    border-radius:8px;
+    font-family: fordAntenna-Bold;
+}
+.a-dialog-deny-button {
+    background-color: white;
+    color: #002F6C;
+    border-radius:8px;
+    border: 2px solid #002F6C;
+    font-family: fordAntenna-Bold;
+}
+
+.a-dialog-ok-button {
+    background-color: #002F6C;
+    color:white;
+    border-radius: 8px;
+    font-family: fordAntenna-Bold;
+}
+
+.a-dialog-text{
+    font-family: fordAntenna;
+}
+
+.a-enter-vr-button{
+    display: none;
+    background: url(images/vrIcon.svg) ;
+    background-repeat: no-repeat;
+    background-size: 40px 40px ;
+    min-width:40px;
+    min-height:40px;
+    right: 0px;
+    margin: 1%;
+    z-index: 2;
+    /* 
+    box-shadow: 0 1rem 1rem 0 rgb(0 0 0 / 10%), 0 2rem 2rem 0 rgb(0 0 0 / 10%), 0 3rem 3rem 0 rgb(0 0 0 / 15%);
+    */
+}
+
+.a-enter-ar-button:active, .a-enter-ar-button:hover, .a-enter-vr-button:active, .a-enter-vr-button:hover {
+    background-color: transparent !important;
+}
+.a-enter-vr-button:active {
+    -webkit-filter: brightness(0.93);
+    filter: brightness(0.93);
+}
+.a-enter-vr-button:hover {
+    background-color: transparent;
+    -webkit-filter: brightness(0.93);
+    filter: brightness(0.93);
+}
+
+
+.a-orientation-modal{
+    background-image: url(images/CardIcon.png);
+    background-repeat: no-repeat;
+    background-color: #16aae3;
+    background-size: 266px 175px;
+}
+
+.a-orientation-modal:after{
+    content:'insira o dispositivo no Cardboard';
+    color:white;
+    font-family: fordAntennaCond-bold;
+}
+
+.a-orientation-modal button{
+    background-image:url(images/ExitIcon.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+html:not(.a-fullscreen) .a-enter-vr {
+    right: 0px;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .a-enter-vr-button{
+        margin: 1em;        
+        display: block;
+        margin-right: 20px;
+    }
+
+    .a-enter-vr {
+        right: -3px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width: 1000px) {
+    .a-enter-vr-button{
+        
+        display: block;
+        margin-right: 20px;
+    }
+}

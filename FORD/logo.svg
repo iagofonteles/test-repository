@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="83px" viewBox="0 0 83 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>491BF196-22A7-4D97-8A17-7B9D8E0B3C4B</title>
+    <g id="Exemplo---Selecao-Modelos---V2---Dark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Selecao_Veiculo_V1_Dark_Passo_4_Carregando_Home" transform="translate(-679.000000, -470.000000)">
+            <g id="Activity-Indicator-/-Circular" transform="translate(680.000000, 472.000000)">
+                <circle id="Indicator" stroke="#6E6E6E" cx="40" cy="40" r="40"></circle>
+                <path d="M40,40 C62.09139,40 80,22.09139 80,0" id="Activity-Line" stroke="#00095B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(60.000000, 20.000000) rotate(-90.000000) translate(-60.000000, -20.000000) "></path>
+                <g id="Progress-Identifier" transform="translate(37.500000, 32.000000)" font-family="FordAntenna-Regular, Ford Antenna" font-size="11" font-weight="normal" letter-spacing="1" line-spacing="16">
+                    <text></text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,102 @@
+
+<html lang="pt-br">
+
+<head>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MP54DBD');</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+
+    <title>Visão 360</title>
+
+    <link rel="preload" href="fontes/FordAntenna-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="fontes/FordAntenna-Semibold.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="fontes/FordAntenna-Bold.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="fontes/FordAntennaCond-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="fontes/FordAntennaCond-Bold.otf" as="font" type="font/otf" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" type="text/css" href="fonts.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styleAframe.css" />
+    <link rel="stylesheet" type="text/css" href="videoPopupStyle.css" />
+</head>
+
+<body onresize="screenResized()">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP54DBD" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div id="ARhide"></div>    
+
+        <div id="gradiente"></div>
+        
+        <div id="btnFechar" class="" onclick="backButton()">
+            <img src="images/button_CLOSE.svg">
+        </div>
+
+        <div id="controlsPanel">
+            <div id="controls">
+                
+                <div id="zoomIn" class="zoomBtn btnActive" onclick="MoveImage.prototype.zoomIn()">
+                    <div class="icon">
+                        <img class="btnActive" src="images/ZoomIn.svg">
+                    </div>
+                    <span>Ampliar</span>
+                </div>
+
+                <div id="zoomOut" class="zoomBtn btnActive btnUnactive" onclick="MoveImage.prototype.zoomOut()">
+                    <div class="icon">
+                        <img class="btnActive" src="images/ZoomOut.svg">
+                    </div>
+                    <span>Diminuir</span>
+                </div>                
+            </div>
+        </div>
+
+        <div id="popup" class="popup popupInactive">
+
+            <div class="content">
+                <span onclick="closePopUp()" id="btnVoltar" class="backBtn">
+                    <img src="images/button_CLOSE.svg">
+                </span>
+
+                <div id="video">
+                    <div class="iframe-container">
+                    <iframe id="videoFrame" src="`https://player.vimeo.com/video/${popupVideoId}`" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div id="divTitulo">
+                        <span id="titulo">título</p>
+                    </div>
+                </div>                
+
+                <div id="prev-next">
+                    <div onclick="before()" id="btnPrev" class="carouselBtnActive">
+                        <img src="images/LeftArrow.svg">&nbsp;
+                    </div>
+
+                    <span id="featureCount">1/1</span>
+
+                    <div onclick="next()" id="btnNext" class="carouselBtnActive">
+                        <img src="images/LeftArrow.svg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>

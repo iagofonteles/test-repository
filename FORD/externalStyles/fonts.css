@@ -1,0 +1,24 @@
+@font-face {
+    font-family: fordAntenna;
+    src: url(../fontes/FordAntenna-Regular.otf);
+}
+
+@font-face {
+    font-family: fordAntenna-Semibold;
+    src: url(../fontes/FordAntenna-Semibold.otf);
+}
+
+@font-face {
+    font-family: fordAntenna-Bold;
+    src: url(../fontes/FordAntenna-Bold.otf);
+}
+
+@font-face {
+    font-family: fordAntennaCond;
+    src: url(../fontes/FordAntennaCond-Regular.otf);
+}
+
+@font-face {
+    font-family: fordAntennaCond-Bold;
+    src: url(../fontes/FordAntennaCond-Bold.otf);
+}
